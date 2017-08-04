@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>h.264 To fmp4</title>  
+	<style type="text/css" media="screen">
+		video.rotate180{
+		  width:100%;
+		  height:100%;
+		  transform:rotateX(180deg);
+		  -moz-transform:rotateX(180deg);
+		  -webkit-transform:rotateX(180deg);
+		  -o-transform:rotateX(180deg);
+		  -ms-transform:rotateX(180deg);
+		} 
+	</style>
+</head>
+<body>
+    <h2>h.264 To fmp4</h2>
+
+ 
+   <script type="text/javascript" src="/dist/wfs.js" ></script>  
+  
+   <div class="wfsjs">
+   <video id="video1"  autoplay class="rotate180" ></video> 
+   <div class="ratio"></div>
+   </div>
+
+    <script>
+ 
+	window.onload = function () {
+        if (Wfs.isSupported()) {
+        	
+            var video1 = document.getElementById("video1"),
+            wfs = new Wfs();    
+            wfs.attachMedia(video1,'ch1');
+         
+
+  
+        }
+    };
+
+ 
+    </script>
+	
+</body>
+</html>
